@@ -8,8 +8,9 @@ import SignUp from "./pages/signup";
 
 export default function DynamicRoutes() {
     return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/resume_Client">
         <Switch>
+        <Header/>
             <Route exact path="/" component={Main}/>
             <Route path="/signin" component={SignIn}/>
             <Route path="/signup" component={SignUp}/>

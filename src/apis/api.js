@@ -8,7 +8,7 @@ class Api {
 
     async popularResume(){ 
 
-        const data =await axios.get(`http://localhost:3000/mockData.json`).catch(Error=>console.log(Error));
+        const data =await axios.get(`https://minu5790.github.io/resume_Client/mockData.json`).catch(Error=>console.log(Error));
 
         return data;
     }
