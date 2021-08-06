@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import ResumeItem from '../resume_item/resumeItem';
 import styles from './resumeList.module.css';
 import Api from '../../apis/api';
@@ -24,7 +25,7 @@ const ResumeList = () => {
     return (
         <div className={styles.content}>
             { !resumes ?  null : resumes.map(resume=>{
-                return <ResumeItem key = {resume.key} resume = {resume}/>
+                return <ResumeItem key = {resume.key} {...resume}/>
             })}
         </div>
     )

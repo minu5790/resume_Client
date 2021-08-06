@@ -1,10 +1,12 @@
-import ResumeList from "./components/resume_list/resumeList";
 import styles from './app.module.css';
-
+import Header from "./components/header/header";
+import ResumeList from "./components/resume_list/resumeList";
 const App =()=> {
   return (
     <>
-        <ResumeList/>
+          <Header/>
+          <ResumeList/>
+        
     </>
   );
 }

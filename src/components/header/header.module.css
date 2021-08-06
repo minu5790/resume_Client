@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 1px 2px 0 rgb(40 50 60 / 6%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 1080px;
+}
+.brand {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu {
+  font-size: 12px;
+}
+.loginButton {
+  padding: 7px 12px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #d9dfeb;
+  border-radius: 0.3rem;
+}
+.loginButton:hover {
+  color: #4e61ff;
+  border: 1px solid #4e61ff;
+}
+.signupButton {
+  padding: 7px 12px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #d9dfeb;
+  border-radius: 0.3rem;
+  background-color: #4e61ff;
+  margin-left: 8px;
+}

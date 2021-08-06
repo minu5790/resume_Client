@@ -1,7 +1,8 @@
 import React from 'react';
+
 import styles from "./resumeItem.module.css";
 
-const ResumeItem = ({resume}) => {
+const ResumeItem = (resume) => {
 
     return(
         <>
