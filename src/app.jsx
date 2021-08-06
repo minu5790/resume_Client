@@ -1,12 +1,13 @@
+import React from 'react';
 import styles from './app.module.css';
 import Header from "./components/header/header";
-import ResumeList from "./components/resume_list/resumeList";
+import DynamicRoutes from './DynamicRoutes';
+
 const App =()=> {
   return (
     <>
-          <Header/>
-          <ResumeList/>
-        
+    <Header/>
+    <DynamicRoutes/>
     </>
   );
 }
