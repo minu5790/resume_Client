@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from "./header.module.css";
 
@@ -6,17 +7,18 @@ const Header =memo (() => {
     return(
         <header className={styles.header}>
             <div className={styles.container}>
-                <a href="/resume_Client" className={styles.brand}>
+
+                <Link to="/resume_Client" className={styles.brand}>
                     <h1>Resume</h1>
-                </a>
+                </Link>
 
                 <div className={styles.menu}>
-                    <a href="/resume_Client/signin" className={styles.loginButton}>
+                    <Link to="/resume_Client/signin" className={styles.loginButton}>
                         로그인
-                    </a>
-                    <a href="/resume_Client/signup" className={styles.signupButton}>
+                    </Link>
+                    <Link to="/resume_Client/signup" className={styles.signupButton}>
                         회원가입
-                    </a>
+                    </Link>
                 </div>
             </div>
 
