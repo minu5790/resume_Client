@@ -6,15 +6,15 @@ const Header =memo (() => {
     return(
         <header className={styles.header}>
             <div className={styles.container}>
-                <a href="/" className={styles.brand}>
+                <a href="/resume_Client" className={styles.brand}>
                     <h1>Resume</h1>
                 </a>
 
                 <div className={styles.menu}>
-                    <a href="/signin" className={styles.loginButton}>
+                    <a href="/resume_Client/signin" className={styles.loginButton}>
                         로그인
                     </a>
-                    <a href="/signup" className={styles.signupButton}>
+                    <a href="/resume_Client/signup" className={styles.signupButton}>
                         회원가입
                     </a>
                 </div>
