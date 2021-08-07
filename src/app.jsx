@@ -6,7 +6,6 @@ import DynamicRoutes from './DynamicRoutes';
 const App =()=> {
   return (
     <>
-
     <DynamicRoutes/>
     </>
   );

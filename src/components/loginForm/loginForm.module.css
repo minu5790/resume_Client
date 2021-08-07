@@ -1,0 +1,26 @@
+.loginContent {
+  width: 400px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+}
+
+input {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+
+input:focus {
+  border-bottom: 1px solid #000;
+}

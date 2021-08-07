@@ -1,7 +1,8 @@
 import React from 'react';
+import LoginForm from '../components/loginForm/loginForm';
 
 export default function SignIn(){
     return (
-        <div style={{marginTop:50}}>로그인 페이지</div>
+            <LoginForm/>
     )
 }
