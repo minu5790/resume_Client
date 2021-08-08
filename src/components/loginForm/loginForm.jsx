@@ -17,7 +17,7 @@ const LoginForm = () => {
             <form  className={styles.loginForm} onSubmit={handleSubmit}>
                 <h2>로그인</h2>
                 <input type="email" id="email" name="email" placeholder="email typing..." value={email} autoFocus required onChange={e=>setEmail(e.target.value)}/>
-                <input type="password" id="password" name="password" placeholder="password typing..."  value={password} autoFocus required onChange={e=>setPassword(e.target.value)}/>
+                <input type="password" id="password" name="password" placeholder="password typing..."  value={password} required onChange={e=>setPassword(e.target.value)}/>
                 <input type="submit" value="로그인" disabled={disabled}/>
             </form>
         </section>
