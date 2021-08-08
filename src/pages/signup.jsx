@@ -1,7 +1,8 @@
 import React from 'react';
+import RegistForm from '../components/registForm/registForm';
 
 export default function SignUp(){
     return (
-        <div style={{marginTop:50}}>회원가입 페이지</div>
+            <RegistForm/>
     )
 }
