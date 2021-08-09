@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './registForm.module.css'
+
 const RegistForm = () =>{
     return (
         <section className={styles.registContent}>

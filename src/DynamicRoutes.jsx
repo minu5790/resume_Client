@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Header from "./components/header/header";
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Header from './components/header/header';
 
 import Main from './pages/main';
-import NotFound from "./pages/NotFound";
+import NotFound from './pages/NotFound';
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
 

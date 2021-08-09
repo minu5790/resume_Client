@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './app.module.css';
 
 import DynamicRoutes from './DynamicRoutes';
+import styles from './app.module.css';
 
 const App =()=> {
   return (
