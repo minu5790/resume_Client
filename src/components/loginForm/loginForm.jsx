@@ -1,25 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import styles from './loginForm.module.css';
 
-const LoginForm = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [disabled, setDisabled] = useState(false);
-    const handleSubmit = async(e) =>{
-        setDisabled(true);
-        e.preventDefault();
-        await new Promise((r) => setTimeout(r, 1000));
-        setDisabled(false);
-    }
+const LoginForm = ({form,onChange,onSubmit}) => {
+
     
     return(
         <section className={styles.loginContent}>
-            <form  className={styles.loginForm} onSubmit={handleSubmit}>
+            <form  className={styles.loginForm} onSubmit={onSubmit}>
                 <h2>로그인</h2>
-                <input type="email" id="email" name="email" placeholder="email typing..." value={email} autoFocus required onChange={e=>setEmail(e.target.value)}/>
-                <input type="password" id="password" name="password" placeholder="password typing..."  value={password} required onChange={e=>setPassword(e.target.value)}/>
-                <input type="submit" value="로그인" disabled={disabled}/>
+                <input type="email" id="email" name="email" placeholder="email typing..." value={form.email} autoFocus required onChange={onChange}/>
+                <input type="password" id="password" name="password" placeholder="password typing..."  value={form.password} required onChange={onChange}/>
+                <input type="submit" value="로그인" />
             </form>
         </section>
     )
