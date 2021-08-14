@@ -8,15 +8,15 @@ const Header =memo (() => {
         <header className={styles.header}>
             <div className={styles.container}>
 
-                <Link to="/resume_Client" className={styles.brand}>
+                <Link to="/" className={styles.brand}>
                     <h1>Resume</h1>
                 </Link>
 
                 <div className={styles.menu}>
-                    <Link to="/resume_Client/signin" className={styles.loginButton}>
+                    <Link to="/signin" className={styles.loginButton}>
                         로그인
                     </Link>
-                    <Link to="/resume_Client/signup" className={styles.signupButton}>
+                    <Link to="/signup" className={styles.signupButton}>
                         회원가입
                     </Link>
                 </div>

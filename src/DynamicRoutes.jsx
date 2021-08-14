@@ -10,15 +10,15 @@ import NotFound from './pages/NotFound';
 
 export default function DynamicRoutes() {
     return (
-    <BrowserRouter  >
-
+    <BrowserRouter  basename={process.env.PUBLIC_URL}>
+        <Header/>
         <Switch>
-            <Route exact path={process.env.PUBLIC_URL +"/"} component={Main}/>
-            <Route path={process.env.PUBLIC_URL +"/signin"} component={LoginContainer}/>
-            <Route path={process.env.PUBLIC_URL +"/signup"} component={RegistContainer}/>
+            <Route exact path={"/"} component={Main}/>
+            <Route path={"/signin"} component={LoginContainer}/>
+            <Route path={"/signup"} component={RegistContainer}/>
             <Route component={NotFound} />
         </Switch>
-        <Header/>
+
     </BrowserRouter>
     );
 }
